@@ -1,0 +1,39 @@
+.menu {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap: 40px;
+  height: 10vh;
+  line-height: 60px;
+  transition: all .3s ease;
+
+}
+a {
+  text-decoration: none;
+
+}
+li:hover {
+  color: white;
+  background-color: orange;
+}
+
+li {
+  list-style: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  border: 2px black solid;
+  transition: all .3s ease;
+
+}
+.showcase {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/aut.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.text {
+  text-align: center;
+  border: 2px black solid;
+  background-color: yellow;
+}

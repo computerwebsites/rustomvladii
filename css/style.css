@@ -1,0 +1,87 @@
+.menu {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap: 40px;
+  height: 10vh;
+  line-height: 60px;
+  transition: all .3s ease;
+
+}
+a {
+  text-decoration: none;
+
+}
+li:hover {
+  color: white;
+  background-color: orange;
+}
+
+li {
+  list-style: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  border: 2px black solid;
+  transition: all .3s ease;
+
+}
+.slideshow {
+  height: 140vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  border: 2px black solid;
+  margin: 20px;
+}
+
+.slide  {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/4.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 0s;
+}
+.slide2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/2.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 5s;
+}
+.slide3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/9.jpg);
+  animation: grade10 20s linear infinite 10s;
+}
+.slide4 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/8.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 15s;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+}
+@keyframes grade10 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
